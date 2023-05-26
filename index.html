@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário de Pesquisa</title>
+</head>
+
+<body>
+    <h1 id="title">Formulário de Pesquisa freeCodeCamp</h1>
+    <h3 class="desc">Obrigado por dedicar seu tempo para nos ajudar a 
+        melhorar a plataforma</h3>
+    <p id="description">Essa pesquisa nos ajudará a melhorar nossos serviços.</p>
+    <div>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org"
+    method="post">
+    <fieldset>
+        <label for="name" id="name-label"><h4>Nome</h4> <input placeholder="Digite seu nome" required id="name" type="text"></input></label>
+        <label for="email" id="email-label"><h4>E-mail</h4> <input placeholder="Digite seu email" required minlength="8" id="email" type="email"></input></label>
+        <label for="number" id="number-label"><h4>Idade</h4> <input placeholder="Digite sua idade" id="number" type="number" min="13" max="120"></label>
+        <label for="ocupacao"><h4>Selecione sua função atual</h4>
+                <select id="ocupacao">
+                  <option value="">Selecione uma opção</option>
+                  <option value="1">Estudante</option>
+                  <option value="2">Trabalho em tempo integral</option>
+                  <option value="3">Aprendiz em meio período</option>
+                  <option value="4">Prefiro não dizer</option>
+                  <option value="5">Outro</option>
+                </select>
+      </fieldset>
+      <fieldset>
+        <h4>Você recomendaria o freeCodeCamp?</h4>
+        <label for="sim"><input class="inline" id="sim" name="account-type" type="radio" /> Definitivamente</label>
+        <label for="talvez"><input class="inline" id="talvez" name="account-type" type="radio" /> Talvez
+        </label>
+        <label for="nao"><input class="inline" id="nao" name="account-type" type="radio" /> Não tenho certeza
+        </label>
+      </fieldset>
+      <fieldset>
+        <h4>O que acha que poderiamos melhorar?</h4>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="f-e"> Projetos front-end</label>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="b-e"> Projetos back-end</label>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="challengers"> Desafios</label>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="forum"> Fórum</label>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="adicionais"> Cursos adicionais</label>
+        <label for="melhorar"><input class="inline" id="melhorar" type="checkbox" value="videos"> Vídeos</label>
+      </fieldset>
+      <fieldset>
+        <h4>Algum comentário ou sugestão?</h4>
+        <textarea placeholder="Escreva seu comentário..." class="sugestao" rows="6" cols="58" ></textarea>
+      </fieldset>
+      <input id="submit" class="botaoenviar" type="submit" value="Enviar">
+      </form>
+    </div>
+</body>
+
+</html>
